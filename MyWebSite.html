@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makia restaurant</title>
+  <!-- 連結google字型、preconnect為Google Fonts 的加速方式 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap的核心css -->
+  <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+  <!-- 抬頭選單 -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a href="#" class="navbar-brand"><img class="mx-2" src="photo/logo.png" width="60" height="60" alt="LOGO">Makia</a>
+      <!-- 漢堡選單 -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MyMenu" aria-controls="MyMenu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="MyMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Product">主廚推薦</a></li>        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="DropSubMenu" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">美味佳餚</a>
+            <div class="dropdown-menu" aria-labelledby="DropSubMenu">
+              <a class="dropdown-item js-scroll-trigger" href="#Focus">異國料理</a>
+              <a class="dropdown-item" href="#Focus">香炸蔬食</a>
+              <a class="dropdown-item" href="#Focus">陳年美酒</a>
+            </div>
+          </li>
+          <!-- 加入下拉子選單 -->
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#HomeLife">品牌信念</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#AboutUs">關於我們</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 抬頭輪播圖 -->
+    <section class="BannerCarouselBox">
+      <div id="Banner" class="carousel slide" data-ride="carousel">
+        <!-- 下方長條按鈕 -->
+        <ol class="carousel-indicators">
+          <li data-target="#Banner" data-slide-to="0" class="active"></li>
+          <li data-target="#Banner" data-slide-to="1"></li>
+          <li data-target="#Banner" data-slide-to="2"></li>
+        </ol>
+        <!-- 輪播照片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item BannerCarouselItem BannerBGCover active"
+            style="background-image: url(photo/menu.jpeg);">
+            <div class="carousel-caption d-none d-md-block BannerTitle">
+              <h5>充滿異國風味美食</h5>
+              <p>來自法國的專業主廚，精心規畫打造的道地歐式料理。</p>
+            </div>
+          </div>
+          <div class="carousel-item BannerCarouselItem BannerBGCover"
+            style="background-image: url(photo/menu2.jpg);">
+            <div class="carousel-caption d-none d-md-block BannerTitle">
+              <h5>每日新鮮的食材</h5>
+              <p>來自產地直送當日的新鮮食材。</p>
+            </div>
+          </div>
+          <div class="carousel-item BannerCarouselItem BannerBGCover"
+            style="background-image: url(photo/menu4.jpg);">
+            <div class="carousel-caption d-none d-md-block BannerTitle">
+              <h5>歐式風格的餐館氛圍</h5>
+              <p>歐洲道地的餐館設計風格。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 左右箭頭 -->
+        <a class="carousel-control-prev" href="#Banner" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">上一頁</span>
+        </a>
+        <a class="carousel-control-next" href="#Banner" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">下一頁</span>
+        </a>
+      </div>
+    </section>
+  </header>
+
+  <!-- 推薦 -->
+  <section class="text-center" id="Product">
+    <div class="container">
+      <div id="chef"></div>
+      <h2 class="text-center font-weight-bolder my-3">主廚推薦</h2>
+      <h4 class="text-center">來自主廚當天選用新鮮食材精心製作的料理</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="CircleBackground"  style="background-image: url(photo/1.jpg);"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="CircleBackground"  style="background-image: url(photo/2.jpg);"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="CircleBackground"  style="background-image: url(photo/3.jpg);"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- 菜單 -->
+    <section class="FocusBox py-5" id="Focus">
+      <div class="container">
+        <h1 class="text-center font-weight-bolder my-3">美味佳餚</h2>
+        <h2 class="text-center font-weight-bolder my-3">各式美食滿足您挑剔的味蕾</h2>
+        <div class="row">
+          <div class="col-md-4 FocusObject">
+            <img src="photo/4.jpg" alt="商品1" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$1288</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 FocusObject">
+            <img src="photo/5.jpg" alt="商品2" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$1099</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 FocusObject">
+            <img src="photo/6.jpg" alt="商品3" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$999</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 FocusObject">
+            <img src="photo/7.jpg" alt="商品4" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$1688</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 FocusObject">
+            <img src="photo/8.jpg" alt="商品5" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$799</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 FocusObject">
+            <img src="photo/9.jpg" alt="商品6" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$1199</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 FocusObject">
+            <img src="photo/10.jpg" alt="商品7" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$2388</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 FocusObject">
+            <img src="photo/11.jpg" alt="商品8" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$1360</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 FocusObject">
+            <img src="photo/12.jpg" alt="商品9" class="img-fluid">
+            <div class="overlay">
+              <div class="HoverShowText">
+                <p>$1250</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- 信念 -->
+   <section class="container-fluid py-5 bg-dark HomeGroup" id="HomeLife">
+    <div class="row">
+      <!-- 背景照片 -->
+      <div class="col-md-4 HomeLeftPicture ml-3" style="background-image: url(photo/boss.jpg);">
+      </div>
+      <!-- 內容文字 -->
+      <div class="container">
+        <div class="row justify-content-end text-light">
+          <div class="col-md-8 HomeRightContent">
+            <h1>品牌信念</h1>
+            <h4>用心做好每道料理</h4>
+            <p>餐廳創辦人Aurt.K.Mashth於2021來到台灣開設這間充滿異國風情的餐廳，希望的就是能把家鄉的美味推廣出去，堅持選用道地的食材
+              又加入當地的特產食物做出料理創新，希望把家鄉佳餚的味道更讓在地人接受。
+            </p>
+            <div class="row mt-5">
+              <div class="col-md-6">
+                <h3>多變的風味</h3>
+                <p>創辦人致力於研究料理創新，融合東西方食材創造出獨特風味</p>
+              </div>
+              <div class="col-md-6">
+                <h3>永恆的堅持</h3>
+                <p>來自法國的創辦人，堅守保留了家鄉的風味，此外也反映在了餐廳的空間氛圍。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 關於我們 -->
+  <section class="py-5 AboutUsBox" id="AboutUs">
+    <div class="container">
+      <div class="AboutUsText">
+        <h2 class="text-center font-weight-bolder my-3">關於我們</h2>
+        <p>創立於2021年，致力於創新料理，歐法式料理優等餐廳。專業法國主廚為您獻上最道地的料理，歡迎到本店來一趟異國美食饗宴</p>
+      </div>
+      <div class="row">
+        <!-- 地圖 -->
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7281.3900576847645!2d120.68828214943872!3d24.147346073106196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d68cf62e061%3A0x7091dd73273f6236!2z5ZyL56uL6Ie65Lit56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1621387351394!5m2!1szh-TW!2stw"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- 表單 -->
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="UserName">姓名</label>
+              <input type="text" class="form-control" id="UserName" placeholder="請輸入姓名" required>
+            </div>
+            <div class="form-group">
+              <label for="UserPhone">電話</label>
+              <input type="tel" class="form-control" id="UserPhone" placeholder="請輸入電話" required>
+            </div>
+            <div class="form-group">
+              <label for="UserEmail">Email</label>
+              <input type="email" class="form-control" id="UserEmail" placeholder="請輸入Email" required>
+            </div>
+            <div class="form-group">
+              <label for="QuestionTextArea">問題留言</label>
+              <textarea class="form-control" id="QuestionTextArea" rows="5" required></textarea>
+            </div>
+            <div class="row justify-content-end m-0">
+              <button type="button" class="btn btn-secondary mr-3">取消</button>
+              <button type="submit" class="btn btn-primary">確認送出</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁腳 -->
+  <footer class="bg-dark">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <img src="photo/logo.png" alt="LOGO" width="100">
+          <p>源自法國的Mirvo Strivrt 1991</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6>品牌介紹</h6>
+          <ul class="list-unstyled">
+            <li>起源發展</li>
+            <li>線上菜單</li>
+            <li>店面資訊</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6>會員中心</h6>
+          <ul class="list-unstyled">
+            <li>聯絡客服</li>
+            <li>點數兌換</li>
+            <li>廠商合作</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h6>社群資訊</h6>
+          <ul class="list-unstyled">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-line fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-invision fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright-->
+    <div class="bg-light py-2">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2 px-0">© Copyright 2021 YuXiang,Chang, All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--jQuery核心文件。務必要在bootstrap.min.js之前 -->
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+  <!-- Bootstrap的核心文件 -->
+  <script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+  <!-- anime.js插件-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- 選單點擊滑動到位錨點JS-->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

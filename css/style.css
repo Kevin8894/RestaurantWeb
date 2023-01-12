@@ -1,0 +1,216 @@
+/* 輪播圖 */
+.BannerCarouselItem {
+  height: 700px;
+  
+}
+
+.BannerBGCover {
+  background-size:cover;
+  background-position: center;
+}
+
+.BannerTitle {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fffffff8;
+}
+
+/* 產品資訊 */
+#Product {
+  padding: 100px 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+#chef{
+  width: 150px;
+  height: 150px;
+  background-image: url(../photo/chef.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+#chef:hover{
+  scale: 1.5;
+}
+.CircleBackground {
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  background-size:cover;
+  background-position: center;
+  border-radius: 20%;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  text-align: center;
+  padding: 40px;
+  margin: 40px 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.CircleBackground:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+
+
+
+
+/* 焦點推薦 */
+.FocusBox {
+  background-color: #d7fdff;
+  background-image: url(../photo/menu3.jpg);
+  background-size: cover;
+  background-position: center;
+  color:rgb(255, 255, 255);
+  padding: 150px 0;
+}
+
+.FocusObject {
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* 照片滑過放大 */
+.FocusObject img {
+  width: 400px;
+  height: 300px;
+  border: 5px solid rgb(255, 81, 0);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.FocusObject:hover img {
+  filter: blur(5px);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* 滑鼠滑過的背景區塊設定 */
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+.FocusObject:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+/* 滑鼠滑過秀出社群分享text */
+.HoverShowText {
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* 居家生活 */
+
+.HomeGroup {
+  position: relative;
+
+}
+
+.HomeLeftPicture {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 居家生活縮成手機版設定 */
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 767.98px) {
+
+  /*瀏覽器小於等於768，文字就會變成白色，和黑色透明背景*/
+  .HomeRightContent {
+    background-color: #00000080;
+    color: #fff;
+  }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+
+
+
+/* 關於我們 */
+.AboutUsBox {
+  color: white;
+  background-image: url(../photo/wall.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+/* 設定文字大小粗細 */
+.AboutUsBox p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* 頁腳 */
+footer {
+  color: rgb(228, 228, 228);
+  font-size: .8rem;
+
+}
+
+footer p {
+  padding: 5px 50% 0 0;
+}
+
+footer a {
+  color: rgba(30, 255, 0, 0.438);
+}
+
+footer a:hover {
+  color: rgb(255, 255, 255);
+}
